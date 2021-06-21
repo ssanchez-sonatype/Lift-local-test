@@ -1,2 +1,2 @@
 Example file
-Another line
+Another line: 2 Another 2 line

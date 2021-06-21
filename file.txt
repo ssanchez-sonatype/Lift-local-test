@@ -1,2 +1,3 @@
 Example file
 Another line: 2 Another 2 line
+Third line

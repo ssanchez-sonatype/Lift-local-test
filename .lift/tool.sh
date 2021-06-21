@@ -17,7 +17,12 @@ function run() {
             \"file\": \"file.txt\", \
             \"line\": 0, \
             \"details_url\": \"https://example.com/#example\" \
-          }]"
+          }, { \"type\": \"Hello Amy\", \
+            \"message\": \"Lift is analyzing commit $commit and found a line\", \
+            \"file\": \"file.txt\", \
+            \"line\": 1, \
+            \"details_url\": \"https://example.com/#example\" \
+          } ]"
 }
 
 if [[ "$cmd" = "run" ]] ; then 

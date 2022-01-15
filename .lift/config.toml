@@ -3,3 +3,8 @@ customTools = [
     ".lift/markdown_tool.py",
     "https://github.com/amy-keibler/lift-tools-framework/releases/download/0.1.0.0-alpha/example-run-per-file"
     ]
+
+[license_header_check]
+file = "license_header.txt"
+pattern = "*.rs"
+style = "block-comment"

@@ -5,7 +5,7 @@ set -e
 function tellApplicable() {
     printf "true\n" "$res"
     
-    printf "testing\n" "something else"
+    printf "testing\n" "$something else"
 }
 
 function tellVersion() {

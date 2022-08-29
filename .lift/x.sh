@@ -65,7 +65,7 @@ case "$3" in
         run
         ;;
     finalize)
-        finalize
+        finalize $3
         ;;
     applicable)
         tellApplicable

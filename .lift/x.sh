@@ -60,12 +60,12 @@ function tellName() {
         printf "V3Test"
 }
 
-case "$3" in
+case "$@" in
     run)
         run
         ;;
     finalize)
-        finalize $3
+        finalize $@
         ;;
     applicable)
         tellApplicable

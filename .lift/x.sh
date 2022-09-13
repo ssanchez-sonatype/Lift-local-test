@@ -3,9 +3,7 @@
 set -e
 
 function tellApplicable() {
-    printf "true\n" "$res"
-    
-    printf "testing\n" "$something else"
+    printf "true\n"
 }
 
 function tellVersion() {

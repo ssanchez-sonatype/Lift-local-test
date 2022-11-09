@@ -60,7 +60,7 @@ function tellName() {
 
 case "$@" in
     run)
-        run
+        run "$@"
         ;;
     finalize)
         finalize "$@"

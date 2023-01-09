@@ -58,7 +58,7 @@ function tellName() {
         printf "V3Test"
 }
 
-case "$3" in
+case "$@" in
     run)
         run
         ;;

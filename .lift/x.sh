@@ -63,7 +63,7 @@ case "$3" in
         run
         ;;
     finalize)
-        finalize
+        finalize "$@"
         ;;
     applicable)
         tellApplicable

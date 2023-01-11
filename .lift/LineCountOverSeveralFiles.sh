@@ -47,7 +47,7 @@ if [ $help -eq 1 ]
       exit 
 fi
 
-shift $[ $OPTIND - 1 ]
+shift $(( $OPTIND - 1 ))
 
 if [ $# -lt 1 ]
 then

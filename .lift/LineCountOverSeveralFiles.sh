@@ -83,8 +83,8 @@ do
       l=`wc -l $f | sed 's/^\([0-9]*\).*$/\1/'`
       echo "$f: $l"
       # increase the counters
-      n=$[ $n + 1 ]
-      s=$[ $s + $l ]
+      n=$(( $n + 1 ))
+      s=$(( $s + $l ))
   else
       # not strictly necessary, because it's the end of the loop
       continue

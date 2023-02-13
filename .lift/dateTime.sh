@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Print default output
-echo `date`
+echo "date"
 
 # Print current date without the time
-echo `date +"%m-%d-%y"`
+echo `"date" +"%m-%d-%y"`
 
 # Use 4 digits for year
-echo `date +"%m-%d-%Y"`
+echo `"date" +"%m-%d-%Y"`
 
 # Display time only
-echo `date +"%T"`
+echo `"date" +"%T"`
 
 # Display 12 hour time
 echo `date +"%r"`

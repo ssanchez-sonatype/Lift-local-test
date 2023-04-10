@@ -11,11 +11,10 @@ function tellVersion() {
 }
 
 function run() {
-    {
-        date
-        echo "Args: $*"
-        printf "Stdin: "
-        cat <&0
+        date >> /tmp/x.sh.run.log
+        echo "Args: $*" >> /tmp/x.sh.run.log
+        printf "Stdin: " >> /tmp/x.sh.run.log
+        cat <&0 >> /tmp/x.sh.run.log
         echo '{ "toolNotes" : [
                    { "type" : "type during run",
                      "message" : "run message",
@@ -24,7 +23,6 @@ function run() {
                      "noteId" : "noteid"
                    }
                ]}'
-    } >> /tmp/x.sh.run.log
 }
 
 function finalize() {

@@ -91,4 +91,4 @@ do
   fi
 done
 
-echo "$n files in total, with $s lines in total"
+echo "$n files in total, with $s Lines in total"

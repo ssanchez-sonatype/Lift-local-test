@@ -30,11 +30,11 @@ function finalize() {
         echo "Args: $*" >> /tmp/x.sh.finalize.log                
         printf "Stdin: " >> /tmp/x.sh.finalize.log
         cat <&0 >> /tmp/x.sh.finalize.log
-        echo "" >> /tmp/x.sh.finalize.log
+        echo "" >> /tmp/x.sh.finalize.log        
         local pr_branch
         pr_branch="v3-tool-run-and-finish-$(date '+%F_%0H-%0M-%0S_%N')"    
         echo "Checking out ${pr_branch} locally" >> /tmp/x.sh.finalize.log
-        git checkout -b $pr_branch &> /dev/null
+        git checkout -b "$pr_branch" &> /dev/null       
         echo "" >> /tmp/x.sh.finalize.log
         cat <<EOF
 { "toolNotes" : [
